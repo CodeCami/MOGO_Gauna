@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>MOGO</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="ruta-del-icono/favicon.ico" type="image/x-icon">
+    
+    <!-- Paleta de colores -->
+    <meta name="theme-color" content="#1db954">
+    
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Contenedor principal para el registro -->
+    <section id="registro">
+        <!-- Título de la página -->
+        <h1 class="titulo">MOGO</h1>
+
+        <!-- Formulario de registro -->
+        <form id="formRegistro" action="creacion_perfil.html" method="POST">
+            
+            <!-- Campo de nombre completo -->
+            <label for="nombre">Nombre Completo:</label>
+            <input type="text" id="nombre" name="nombre" required placeholder="Ingresa tu nombre completo">
+
+            <!-- Campo de fecha de nacimiento -->
+            <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+            <input type="date" id="fechaNacimiento" name="fechaNacimiento" required>
+
+            <!-- Campo de correo electrónico -->
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required placeholder="Ingresa tu correo electrónico">
+
+            <!-- Términos y condiciones -->
+            <label for="terminos">
+                <input type="checkbox" id="terminos" name="terminos" required>
+                Estoy de acuerdo con los <a href="#">Términos y Condiciones</a>
+            </label>
+
+            <!-- Botón de enviar -->
+            <button type="submit" id="btnRegistro">Registrarse</button>
+        </form>
+    </section>
+
+    <!-- Enlace al archivo JavaScript -->
+    <script src="styles.js" defer></script>
+
+</body>
+</html>

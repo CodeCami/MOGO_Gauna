@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOGO</title>
+    <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+    <!-- Sección principal de la página (Parte 1) -->
+    <section id="home">
+        <h1>¡Bienvenido a la Página!</h1>
+        <button id="createProfileBtn">Crear Perfil</button>
+    </section>
+    
+    <!-- Sección de Creación de Perfil (Parte 2) -->
+    <section id="profileCreation" style="display: none;">
+        <h2>Crear tu Perfil</h2>
+        
+        <form id="profileForm">
+            <!-- Selección de imagen -->
+            <label for="profileImage">Foto de Perfil:</label>
+            <input type="file" id="profileImage" accept="image/*">
+            
+            <!-- Nombre de usuario -->
+            <label for="username">Nombre:</label>
+            <input type="text" id="username" required>
+            
+            <!-- Descripción de usuario (texto no editable) -->
+            <label for="description">Descripción:</label>
+            <input type="text" id="description">
+            
+            <!-- Lo que busca en una pareja -->
+            <label for="lookingFor">Lo que busco en una pareja:</label>
+            <input type="text" id="lookingFor" required>
+            
+            <button type="submit">Guardar Perfil</button>
+        </form>
+    </section>
+    
+    <!-- Script de JavaScript -->
+    <script src="styles2.js"></script>
+</body>
+</html>

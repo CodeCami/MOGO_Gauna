@@ -1,0 +1,73 @@
+/* style.css */
+
+/* Diseño global */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #80f8aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Sección principal */
+#home {
+    text-align: center;
+    animation: fadeIn 1s ease;
+}
+
+/* Botón de inicio */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: #35493c;
+    transition: background-color 0.3s ease;
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* Sección de perfil */
+#profileCreation {
+    padding: 20px;
+    background: linear-gradient(145deg, #0004, #b6fd7b);
+    border: 2px solid #020201;
+    padding: 20px 40px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0px 55px #fff2;
+    width: 100%;
+    max-width: 450px;
+    margin: 10px;
+    animation: slideIn 0.5s ease;
+}
+
+label {
+    font-weight: bold;
+    margin-top: 10px;
+    display: block;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes slideIn {
+    from { transform: translateY(-20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}

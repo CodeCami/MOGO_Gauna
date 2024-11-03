@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOGO</title>
+    <link rel="stylesheet" href="styles_genero.css">
+</head>
+<body>
+    <!-- Icono de la página en la esquina superior izquierda -->
+    <div class="page-icon">
+        <img src="icon.png" alt="Icono de la Página">
+    </div>
+
+    <!-- Botón de menú en la esquina superior derecha -->
+    <div class="menu-button" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <!-- Menú desplegable -->
+    <div class="sidebar-menu" id="menu">
+        <ul>
+            <li onclick="goToPage('miPerfil')">Mi Perfil</li>
+            <li onclick="goToPage('misMeGustas')">Mis Me Gustas</li>
+            <li onclick="goToPage('sobreNosotros')">Sobre Nosotros</li>
+            <li onclick="goToPage('configuraciones')">Configuraciones</li>
+            <li onclick="goToPage('eleccionGenero')">Cambiar Elección de Género</li>
+        </ul>
+    </div>
+
+    <!-- Contenedor del perfil actual -->
+    <div class="profile-container">
+        <div class="profile-info">
+            <div class="profile-pic">
+                <img src="foto_perfil.jpg" alt="Foto de Perfil">
+            </div>
+            <div class="profile-details">
+                <h3>Nombre de Usuario</h3>
+                <p>Breve descripción del usuario... <span class="dots">...</span></p>
+            </div>
+        </div>
+        
+        <!-- Botones de acción -->
+        <div class="action-buttons">
+            <button id="likeBtn" onclick="handleLike()">👍</button>
+            <button id="dislikeBtn" onclick="showNextProfile()">👎</button>
+        </div>
+    </div>
+
+    <!-- Flechas de navegación -->
+    <div class="navigation-arrows">
+        <button onclick="showPreviousProfile()">⬅️</button>
+        <button onclick="showNextProfile()">➡️</button>
+    </div>
+
+    <script src="styles_genero.js"></script>
+</body>
+</html>

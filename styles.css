@@ -1,0 +1,126 @@
+/* Importamos las tipografías personalizadas */
+@import url('https://fonts.googleapis.com/css2?family=Gendy+Modern+Sans&family=Salmon&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #80f8aa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor de registro */
+#registro {
+    margin: 10px;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    padding: 10px;
+}
+
+/* Estilo del título */
+.titulo {
+    font-family: 'Gendy Modern Sans', sans-serif;
+    color: #000; /* Verde */
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Estilos del formulario */
+form {
+    background: linear-gradient(145deg, #0004, #b6fd7b);
+    border: 2px solid #020201;
+    padding: 20px 40px 20px 20px;
+    border-radius: 8px;
+    box-shadow: 0 0px 55px #fff2;
+    width: 100%;
+    max-width: 450px;
+    margin: 10px;
+}
+
+/* Estilo de los campos del formulario */
+label {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 40px;
+    margin-right: 80px;
+    border-radius: 5px;
+    border: 1px solid #71f899;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo del checkbox */
+label[for="terminos"] {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+/* Botón de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #1db954; /* Verde */
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #ffad08; /* Amarillo/naranja */
+}
+
+/* Animación cuando se acepta los términos y condiciones */
+input[type="checkbox"]:checked + a {
+    animation: terminosAceptados 0.5s ease-in-out;
+}
+
+@keyframes terminosAceptados {
+    0% {
+        color: white;
+    }
+    100% {
+        color: #1db954; /* Verde */
+    }
+}
+
+/* Animación al enviar el formulario */
+button[type="submit"]:active {
+    animation: enviarFormulario 0.3s ease-in-out;
+}
+
+@keyframes enviarFormulario {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+    100% {
+        transform: scale(1);
+    }
+}

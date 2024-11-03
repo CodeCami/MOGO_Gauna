@@ -1,0 +1,129 @@
+/* Fondo de pantalla completo */
+body {
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Icono de la página */
+.page-icon {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+/* Botón de menú (tres líneas) */
+.menu-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.menu-button span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #8aec7d;
+}
+
+/* Menú desplegable */
+.sidebar-menu {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.9);
+    color: #8aec7d;
+    transition: right 0.4s ease;
+}
+.sidebar-menu ul {
+    list-style: none;
+    padding: 20px;
+}
+.sidebar-menu ul li {
+    padding: 15px;
+    cursor: pointer;
+}
+.sidebar-menu ul li:hover {
+    background: #555;
+}
+
+/* Información del perfil */
+.profile-container {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: #fff;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.7);
+}
+.profile-pic img {
+    width: 90px;
+    height: 90px;
+    border-radius: 10%;
+}
+.profile-details h3 {
+    margin: 10px 0 5px 0;
+}
+.profile-details p {
+    max-width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Botones de acción */
+.action-buttons {
+    position: absolute;
+    bottom: 50px;
+    left: 1100px;
+    display: flex;
+    gap: 15px;
+}
+.action-buttons button {
+    font-size: 24px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.action-buttons button:hover {
+    transform: scale(1.2);
+}
+
+/* Flechas de navegación */
+.navigation-arrows {
+    position: absolute;
+    bottom: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 200px 0px;
+    color: white;
+}
+.navigation-arrows button {
+    font-size: 24px;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+.navigation-arrows button:hover {
+    transform: scale(1.2);
+}
+
+/* Animación para abrir el menú */
+.menu-open .sidebar-menu {
+    right: 0;
+}
